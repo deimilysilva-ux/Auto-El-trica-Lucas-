@@ -1,0 +1,644 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* HEADER */
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 53px;
+
+    background-color: #202020;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 11%;
+}
+
+
+/* LOGO */
+
+.logo img {
+    width: 75px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* NAV */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+/* BOTÃO */
+
+.botao {
+    background-color: #ff4b0b;
+
+    padding: 8px 18px;
+
+    border-radius: 20px;
+}
+
+
+/* BANNER */
+
+.banner {
+    width: 100%;
+    height: 470px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+
+/* QUEM SOMOS */
+
+
+
+
+/* FIM DO QUEM SOMOS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+        padding: 15px 5%;
+
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .banner {
+        height: 400px;
+    }
+}
+
+
+/* CELULAR */
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .botao {
+        padding: 7px 14px;
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    .banner img {
+        object-position: center;
+    }
+}
+
+
+/* QUEM SOMOS MOBILE RESPONSIVO */
+
+/* =========================
+   QUEM SOMOS
+========================= */
+
+.quem-somos {
+    background-color: #eeeeee;
+    padding: 45px 12% 80px;
+    min-height: 500px;
+}
+
+
+/* TÍTULO */
+
+.quem-somos h2 {
+    text-align: center;
+    color: #ff4b0b;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    margin-bottom: 65px;
+}
+
+
+/* CONTEÚDO */
+
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+
+/* TEXTO */
+
+.sobre-texto {
+    width: 40%;
+
+    font-size: 16px;
+    line-height: 1.1;
+
+    color: #111111;
+}
+
+
+/* ESPAÇO DO VÍDEO */
+
+.sobre-video {
+    width: 50%;
+    height: 278px;
+
+    background-color: #d8d8d8;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 768px) {
+
+    .quem-somos {
+        padding: 40px 7% 60px;
+    }
+
+    .quem-somos h2 {
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+
+    .sobre-conteudo {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .sobre-texto {
+        width: 100%;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+    .sobre-video {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+
+/* CELULAR */
+
+@media (max-width: 480px) {
+
+    .quem-somos {
+        padding: 35px 20px 50px;
+    }
+
+    .quem-somos h2 {
+        font-size: 19px;
+        margin-bottom: 30px;
+    }
+
+    .sobre-texto {
+        font-size: 14px;
+    }
+
+    .sobre-video {
+        height: 210px;
+    }
+}
+
+
+/* FIM DE QUEM SOMOS RESPONSIVO */
+
+/* cards */
+/* =========================
+   SERVIÇOS
+========================= */
+
+.servicos {
+    background-color: #ffffff;
+    padding: 80px 5%;
+}
+
+.servicos h2 {
+    text-align: center;
+    color: #10233d;
+    font-size: 20px;
+    margin-bottom: 65px;
+}
+
+
+/* CARDS */
+
+.cards-servicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 42px;
+
+    width: 100%;
+}
+
+
+/* CARD */
+
+.card-servico {
+    width: 140px;
+    height: 195px;
+
+    background-color: #d9d9d9;
+
+    border-radius: 25px;
+
+    padding: 7px;
+}
+
+
+/* CARD DO MEIO */
+
+.card-servico.destaque {
+    width: 170px;
+    height: 240px;
+}
+
+
+/* IMAGEM */
+
+.card-servico img {
+    width: 100%;
+    height: 105px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    display: block;
+}
+
+
+/* IMAGEM DO CARD DO MEIO */
+
+.card-servico.destaque img {
+    height: 110px;
+}
+
+
+/* ÁREA DO TEXTO */
+
+.card-texto {
+    background-color: #eeeeee;
+
+    margin-top: 14px;
+
+    height: 50px;
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+}
+
+
+/* TEXTO */
+
+.card-texto h3 {
+    font-size: 13px;
+    color: #10233d;
+    text-align: center;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+/* TABLET */
+
+/* LOGO */
+
+.logo img {
+    width: 50px;
+    height: auto;
+    display: block;
+}
+
+
+/* TABLET */
+
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+        padding: 15px 6%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo img {
+        width: 50px;
+        height: auto;
+        display: block;
+    }
+
+    nav {
+        gap: 22px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+}
+
+
+/* Fim dos cards */
+/* =========================
+   SERVIÇOS
+========================= */
+
+.servicos {
+    background-color: #ffffff;
+
+    padding: 80px 8%;
+
+    overflow: hidden;
+}
+
+
+/* TÍTULO */
+
+.servicos h2 {
+    text-align: center;
+
+    color: #10233d;
+
+    font-size: 20px;
+
+    margin-bottom: 65px;
+}
+
+
+/* ÁREA DOS CARDS */
+
+.cards-servicos {
+    display: flex;
+    align-items: center;
+
+    gap: 42px;
+
+    overflow-x: auto;
+
+    padding: 10px 10px 25px;
+
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+}
+
+
+/* ESCONDE A BARRA DE ROLAGEM */
+
+.cards-servicos::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* CARD */
+
+.card-servico {
+    flex: 0 0 140px;
+
+    height: 195px;
+
+    background-color: #d9d9d9;
+
+    border-radius: 25px;
+
+    padding: 7px;
+
+    scroll-snap-align: center;
+
+    transition: transform 0.3s;
+}
+
+
+/* CARD DO MEIO */
+
+.card-servico.destaque {
+    flex-basis: 170px;
+
+    height: 240px;
+
+    border-radius: 25px;
+}
+
+
+/* IMAGEM */
+
+.card-servico img {
+    width: 100%;
+
+    height: 105px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    display: block;
+}
+
+
+/* IMAGEM DO CARD MAIOR */
+
+.card-servico.destaque img {
+    height: 110px;
+}
+
+
+/* ÁREA DO TEXTO */
+
+.card-texto {
+    background-color: #eeeeee;
+
+    margin-top: 14px;
+
+    height: 50px;
+
+    border-radius: 8px;
+
+    padding: 10px;
+}
+
+
+/* TEXTO */
+
+.card-texto h3 {
+    font-size: 13px;
+
+    color: #10233d;
+
+    text-align: center;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 768px) {
+
+    .servicos {
+        padding: 60px 5%;
+    }
+
+    .servicos h2 {
+        font-size: 19px;
+
+        margin-bottom: 45px;
+    }
+
+    .cards-servicos {
+        gap: 25px;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .card-servico {
+        flex-basis: 145px;
+    }
+
+    .card-servico.destaque {
+        flex-basis: 165px;
+    }
+}
+
+
+/* CELULAR */
+
+@media (max-width: 480px) {
+
+    .servicos {
+        padding: 50px 0;
+    }
+
+    .servicos h2 {
+        font-size: 18px;
+
+        margin-bottom: 40px;
+    }
+
+    .cards-servicos {
+        display: flex;
+        align-items: center;
+        gap: 42px;
+    
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    
+        padding: 10px;
+    }
+
+    .card-servico {
+        flex: 0 0 140px;
+    
+        scroll-snap-align: center;
+    }
+
+    .card-servico.destaque {
+        flex-basis: 160px;
+        height: 225px;
+    }
+
+    .card-servico img {
+        height: 100px;
+    }
+
+    .card-servico.destaque img {
+        height: 105px;
+    }
+
+    .card-texto {
+        height: 48px;
+    }
+}
